@@ -8,9 +8,6 @@ function App() {
   <>
     <div>
       <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
     </div>
   </>
   )
