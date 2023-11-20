@@ -1,7 +1,9 @@
+import styles from './cards.module.css';
+
 const PokemonCard = () => {
   return (
-    <figure>
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"></img>
+    <figure className={styles.card}>
+      <img className={styles.cardImg} src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"></img>
       <figcaption>Bulbasaur</figcaption>
     </figure>
   )
