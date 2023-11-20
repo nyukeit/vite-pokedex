@@ -1,13 +1,13 @@
 import './cards.css';
 
-const PokemonCard = ({name, imgSrc}) => {
+const PokemonCard = ({ pokemon }) => {
   // console.log({name, imgSrc});
   return (
     <figure className="card">
       {
-        imgSrc ? <img className='cardImg' src={imgSrc} alt={name}/> : <p>???</p> // Display image if Bulbasaur, ??? if mew
+        pokemon.imgSrc ? <img className='cardImg' src={pokemon.imgSrc} alt={pokemon.name}/> : <p>???</p> // Display image if Bulbasaur, ??? if mew
       }
-      <figcaption>{name}</figcaption>
+      <figcaption>{pokemon.name}</figcaption>
     </figure>
   )
 }

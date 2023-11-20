@@ -15,12 +15,10 @@ const pokemonList = [
 
 function App() {
 
-  const pokemon = pokemonList[0];
-
   return (
   <>
     <div>
-      <PokemonCard name={pokemon.name} imgSrc={pokemon.imgSrc}/>
+      <PokemonCard pokemon={pokemonList[0]}/>
     </div>
   </>
   )
