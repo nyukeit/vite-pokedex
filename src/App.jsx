@@ -67,8 +67,8 @@ function App() {
       <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
     </div>
     <div>
-      <button className='navbuttons' onClick={handleClickPrevious}>Previous</button>
-      <button className='navbuttons' onClick={handleClickNext}>Next</button>
+      { pokemonIndex > 0 ? <button className='navbuttons' onClick={handleClickPrevious}>Previous</button> : <button className='navbuttons'>Previous</button>}
+      { pokemonIndex < pokemonList.length - 1 ? <button className='navbuttons' onClick={handleClickNext}>Next</button> : <button className='navbuttons'>Next</button>}
     </div>
   </>
   )
