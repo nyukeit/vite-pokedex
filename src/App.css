@@ -1,8 +1,15 @@
 #root {
-  display: flex;
-  flex-direction: row;
   max-width: 1280px;
   /* margin: 0 auto; */
   padding: 2rem;
   text-align: center;
+}
+
+.navbuttons {
+  margin: 1em;
+  border: none;
+  background-color: azure;
+  color: black;
+  cursor: pointer;
+  padding: 0.6em;
 }
